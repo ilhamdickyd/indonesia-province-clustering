@@ -1,0 +1,138 @@
+[
+    {
+        "nama_provinsi":"ACEH",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"BALI",
+        "klaster":6
+    },
+    {
+        "nama_provinsi":"BANTEN",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"BENGKULU",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"DI YOGYAKARTA",
+        "klaster":6
+    },
+    {
+        "nama_provinsi":"DKI JAKARTA",
+        "klaster":3
+    },
+    {
+        "nama_provinsi":"GORONTALO",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"JAMBI",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"JAWA BARAT",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"JAWA TENGAH",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"JAWA TIMUR",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"KALIMANTAN BARAT",
+        "klaster":0
+    },
+    {
+        "nama_provinsi":"KALIMANTAN SELATAN",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"KALIMANTAN TENGAH",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"KALIMANTAN TIMUR",
+        "klaster":6
+    },
+    {
+        "nama_provinsi":"KALIMANTAN UTARA",
+        "klaster":5
+    },
+    {
+        "nama_provinsi":"KEPULAUAN BANGKA BELITUNG",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"KEPULAUAN RIAU",
+        "klaster":6
+    },
+    {
+        "nama_provinsi":"LAMPUNG",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"MALUKU",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"MALUKU UTARA",
+        "klaster":0
+    },
+    {
+        "nama_provinsi":"NUSA TENGGARA BARAT",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"NUSA TENGGARA TIMUR",
+        "klaster":2
+    },
+    {
+        "nama_provinsi":"PAPUA",
+        "klaster":2
+    },
+    {
+        "nama_provinsi":"PAPUA BARAT",
+        "klaster":2
+    },
+    {
+        "nama_provinsi":"RIAU",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"SULAWESI BARAT",
+        "klaster":0
+    },
+    {
+        "nama_provinsi":"SULAWESI SELATAN",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"SULAWESI TENGAH",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"SULAWESI TENGGARA",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"SULAWESI UTARA",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"SUMATERA BARAT",
+        "klaster":1
+    },
+    {
+        "nama_provinsi":"SUMATERA SELATAN",
+        "klaster":4
+    },
+    {
+        "nama_provinsi":"SUMATERA UTARA",
+        "klaster":1
+    }
+]
