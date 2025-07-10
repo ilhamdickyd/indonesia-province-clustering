@@ -1,111 +1,103 @@
-# Dashboard Analisis Klaster Provinsi Indonesia
+# Uncovering Development Patterns Across Indonesia (2010-2023): A Clustering Analysis
 
-## Daftar Isi
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-  * [Tentang Proyek](https://www.google.com/search?q=%23tentang-proyek)
-  * [Fitur Dashboard](https://www.google.com/search?q=%23fitur-dashboard)
-  * [Teknologi yang Digunakan](https://www.google.com/search?q=%23teknologi-yang-digunakan)
-  * [Alur Analisis Data](https://www.google.com/search?q=%23alur-analisis-data)
-  * [Instalasi & Menjalankan Proyek](https://www.google.com/search?q=%23instalasi--menjalankan-proyek)
-  * [Hasil & Temuan](https://www.google.com/search?q=%23hasil--temuan)
-  * [Kontak](https://www.google.com/search?q=%23kontak)
+![Project Screenshot]([URL_SCREENSHOT_ANDA])
 
------
+An end-to-end data science project that performs a clustering analysis on Indonesia's 34 provinces based on their development and welfare profiles. The results are presented through a fully interactive web dashboard built from scratch.
 
-## Tentang Proyek
+**[➡️ View Live Dashboard](https://dashboard-klaster-provinsi.vercel.app/)** | **[➡️ Read the Full Analysis on Medium](https://medium.com/@ilham.dicky.darmawan/analisis-clustering-untuk-memahami-profil-pembangunan-34-provinsi-di-indonesia-6ce688427bff)**
 
-Proyek ini bertujuan untuk melakukan segmentasi atau pemetaan provinsi di seluruh Indonesia berdasarkan karakteristik kesejahteraan masyarakatnya. Dengan menggunakan data resmi statistik dari BPS periode 2010-2023, analisis ini mengelompokkan provinsi-provinsi ke dalam klaster-klaster yang memiliki profil serupa.
+---
 
-Hasil dari analisis ini disajikan dalam bentuk dashboard web interaktif yang memungkinkan pengguna untuk mengeksplorasi profil setiap klaster, membandingkannya, dan memahami heterogenitas kondisi sosial-ekonomi di Indonesia. Dashboard ini juga memberikan kerangka untuk menganalisis potensi dampak dari guncangan ekonomi, seperti inflasi, terhadap daerah dengan tingkat kerentanan yang berbeda.
+## Table of Contents
+- [About The Project](#about-the-project)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Analysis Workflow](#analysis-workflow)
+- [Getting Started](#getting-started)
+- [Results & Findings](#results--findings)
+- [Contact](#contact)
 
------
+---
 
-## Fitur Dashboard
+## About The Project
 
-  * **Peta Interaktif:** Peta koroplet yang mewarnai setiap provinsi sesuai dengan klasternya, dilengkapi dengan tooltip informatif.
-  * **Filter Dinamis:** Pengguna dapat memfokuskan visualisasi pada klaster tertentu, dan peta akan menyorot provinsi yang relevan secara real-time.
-  * **Grafik Komparatif:** Berbagai jenis grafik (Bar, Pie, Line) untuk membandingkan profil setiap klaster dan melihat tren data dari waktu ke waktu.
-  * **Desain Responsif:** Tampilan yang dioptimalkan untuk berbagai ukuran layar.
+This project aims to segment Indonesia's 34 provinces based on their socio-economic welfare characteristics. Using official statistical data from BPS (Statistics Indonesia) for the 2010-2023 period, this analysis groups provinces into distinct clusters with similar development profiles.
 
------
+The final output is an interactive web dashboard that allows users to explore each cluster's profile, compare them, and understand the heterogeneity of socio-economic conditions across Indonesia.
 
-## Teknologi yang Digunakan
+## Key Features
 
-Proyek ini menggabungkan dua disiplin ilmu: Analisis Data dan Pengembangan Web.
+- ✅ **Interactive Choropleth Map:** Colors each province according to its assigned cluster, complete with informative tooltips.
+- ✅ **Dynamic Filtering:** Users can focus the visualization on specific clusters, and the map will highlight the relevant provinces in real-time.
+- ✅ **Comparative Charts:** A variety of charts (Bar, Pie, Line) to compare each cluster's profile and observe data trends over time.
+- ✅ **Fully Responsive Design:** Optimized for various screen sizes, from mobile to desktop.
 
-**Analisis Data (di Google Colab):**
+## Tech Stack
 
-  * **Python**
-  * **Pandas** & **GeoPandas** untuk manipulasi data.
-  * **Scikit-learn** untuk pemodelan K-Means Clustering.
-  * **Matplotlib** untuk visualisasi awal.
+This project combines two main disciplines: Data Analysis and Web Development.
 
-**Frontend Dashboard (di Vercel):**
+| Category | Technologies Used |
+| :--- | :--- |
+| **Data Analysis** | `Python`, `Pandas`, `GeoPandas`, `Scikit-learn`, `Matplotlib`, `Seaborn` |
+| **Frontend Dashboard** | `Next.js`, `React`, `TypeScript`, `Tailwind CSS`, `Recharts`, `React-Leaflet` |
 
-  * **Next.js** (React Framework)
-  * **Tailwind CSS** untuk styling.
-  * **Recharts** untuk grafik interaktif.
-  * **React-Leaflet** untuk peta interaktif.
-  * **Git LFS** untuk manajemen file data besar di GitHub.
+## Analysis Workflow
 
------
+The dashboard is built upon a solid data analysis workflow as follows:
+1.  **Data Collection & Cleaning:** Merged and cleaned 5 datasets from BPS to handle inconsistencies.
+2.  **Standardization:** Performed data scaling to prepare features for modeling.
+3.  **Optimal Cluster Determination:** Used the **Elbow Method** and **Silhouette Score** to determine that **7 clusters** was the optimal number.
+4.  **K-Means Modeling:** Executed the K-Means algorithm to group the 34 provinces into the 7 identified clusters.
+5.  **Cluster Interpretation:** Analyzed each cluster's profile to assign a descriptive name and meaning.
 
-## Alur Analisis Data
+## Getting Started
 
-Dashboard ini dibangun di atas analisis data yang solid dengan alur sebagai berikut:
+To run this project on your local machine, follow these steps.
 
-1.  **Pengumpulan & Pembersihan Data:** Menggabungkan 5 dataset dari BPS dan melakukan pembersihan untuk mengatasi inkonsistensi data.
-2.  **Agregasi & Standardisasi:** Menghitung profil rata-rata setiap provinsi dan melakukan standardisasi skala data.
-3.  **Penentuan Jumlah Klaster:** Menggunakan **Metode Siku (Elbow Method)** dan **Skor Siluet (Silhouette Score)** untuk menentukan jumlah klaster paling optimal, yaitu **7 klaster**.
-4.  **Pemodelan K-Means:** Menjalankan algoritma K-Means untuk mengelompokkan 34 provinsi ke dalam 7 klaster.
-5.  **Interpretasi Hasil:** Menganalisis profil setiap klaster untuk memberikan nama dan makna yang deskriptif.
+### Prerequisites
 
------
+- [Node.js](https://nodejs.org/en/) (v18 or later recommended)
+- [Git LFS](https://git-lfs.com) (This project uses Git LFS for handling large map files)
 
-## Instalasi & Menjalankan Proyek
+### Installation
 
-Untuk menjalankan proyek ini di komputer lokal Anda:
-
-1.  **Prasyarat:** Pastikan Anda sudah menginstall [Node.js](https://nodejs.org/en/) dan [Git LFS](https://git-lfs.com).
-
-2.  **Clone Repositori:**
-
+1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/IlhamDickyDarmawan/dashboard-klaster-provinsi.git
-    cd dashboard-klaster-provinsi
+    git clone [URL_GITHUB_REPO_ANDA]
+    cd [nama-folder-repository]
     ```
 
-3.  **Tarik File LFS:**
-    Perintah ini akan mengunduh file peta `.geojson` yang besar.
-
+2.  **Pull LFS files:**
+    This command will download the large `.geojson` map file needed for the visualization.
     ```bash
     git lfs pull
     ```
 
-4.  **Install Dependencies:**
-
+3.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-5.  **Jalankan Server Pengembangan:**
-
+4.  **Run the development server:**
     ```bash
     npm run dev
     ```
 
-6.  Buka [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) di browser Anda.
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
------
+## Results & Findings
 
-## Hasil & Temuan
+The analysis successfully identified **7 unique provincial profiles**, ranging from the **'Advanced Economic Hub'** (DKI Jakarta), which has the highest economic resilience, and the **'Stable Middle'** profile, which includes the majority of provinces, down to the **'Vulnerable Cluster'** (e.g., Papua, NTT), which exhibits the lowest welfare levels and is most susceptible to economic shocks.
 
-Analisis berhasil mengidentifikasi **7 profil provinsi** yang unik, mulai dari **'Pusat Ekonomi Unggul'** (DKI Jakarta) yang memiliki ketahanan ekonomi tertinggi, **'Menengah Stabil'** yang menjadi profil mayoritas provinsi, hingga **'Rentan (Perhatian Khusus)'** (Papua, NTT, dll) yang menunjukkan tingkat kesejahteraan paling rendah dan paling rentan terhadap guncangan ekonomi.
+---
 
------
+## Contact
 
-## Kontak
+**Ilham Dicky Darmawan**
 
-Ilham Dicky Darmawan - [GitHub Profile](https://www.google.com/search?q=https://github.com/IlhamDickyDarmawan)
-
-*Project Link:* [https://github.com/IlhamDickyDarmawan/dashboard-klaster-provinsi](https://www.google.com/search?q=https://github.com/IlhamDickyDarmawan/dashboard-klaster-provinsi)
+[ilham.dicky.darmawan@gmail.com](mailto:ilham.dicky.darmawan@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ilham-dicky-darmawan) | [GitHub](https://github.com/ilhamdickyd)
