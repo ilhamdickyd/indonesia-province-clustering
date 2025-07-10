@@ -70,8 +70,8 @@ To run this project on your local machine, follow these steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [URL_GITHUB_REPO_ANDA]
-    cd [nama-folder-repository]
+    git clone https://github.com/ilhamdickyd/indonesia-province-clustering
+    cd indonesia-province-clustering
     ```
 
 2.  **Pull LFS files:**
