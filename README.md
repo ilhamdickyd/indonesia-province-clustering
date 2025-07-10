@@ -5,7 +5,9 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-![Project Screenshot]([URL_SCREENSHOT_ANDA])
+![Project Screenshot](https://i.imgur.com/2bbDhqA.png)
+![Project Screenshot](https://i.imgur.com/B3PIef2.png)
+![Project Screenshot](https://i.imgur.com/GCDKpZU.png)
 
 An end-to-end data science project that performs a clustering analysis on Indonesia's 34 provinces based on their development and welfare profiles. The results are presented through a fully interactive web dashboard built from scratch.
 
